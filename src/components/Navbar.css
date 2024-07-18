@@ -1,0 +1,116 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffc107;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .auth-buttons button {
+    background-color: #ffc107;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #e0a800;
+  }
+  
+  .auth-buttons .login-button {
+    background-color: #007bff;
+  }
+  
+  .auth-buttons .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-buttons .signup-button {
+    background-color: #0bf45c;
+  }
+  
+  .auth-buttons .signup-button:hover {
+    background-color: #079e1e;
+  }
+  
+
+  .auth-buttons .logout-button {
+    background-color: #dc3545;
+  }
+  
+  .auth-buttons .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin: 0.5rem 0;
+    }
+  
+    .auth-buttons {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+  
+    .auth-buttons button {
+      width: 48%;
+    }
+  }
+  
